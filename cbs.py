@@ -340,7 +340,7 @@ def main():
 
     # Write to output file
     for agent, path in solution.items():
-        output_filename = f"/home/stark/Academics/Main project/Test_4/agent_schedules/output_{agent}.yaml"
+        output_filename = f"./agent_schedules/output_{agent}.yaml"
         output = {
             "agent": agent,
             "schedule": path,

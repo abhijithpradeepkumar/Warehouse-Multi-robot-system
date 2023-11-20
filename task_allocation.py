@@ -101,7 +101,7 @@ def create_task_yaml(agents, queue):
             'assigned_agent': None
         })
 
-    with open('/home/stark/Academics/Main project/Test_4/input.yaml', 'w') as file:
+    with open('./input.yaml', 'w') as file:
         yaml.safe_dump(tasks, file)
 
     return tasks_list, tasks
@@ -206,5 +206,5 @@ def allocate_tasks(queue):
     yaml_string = yaml_string.replace('OBSTACLES_PLACEHOLDER', obstacles_string)
 
     # Write the modified YAML string to the output file
-    with open('/home/stark/Academics/Main project/Test_4/input.yaml', 'w') as f:
+    with open('./input.yaml', 'w') as f:
         f.write(yaml_string)
